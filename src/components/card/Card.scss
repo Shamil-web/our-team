@@ -1,0 +1,14 @@
+.card {
+  border: 1px solid #ddd; /* Граница карточки */
+  border-radius: 8px; /* Закругленные углы */
+  overflow: hidden;
+  width: 300px; /* Ширина карточки */
+  margin: 20px; /* Отступ между карточками */
+  cursor: pointer;
+}
+
+.card-image {
+  width: 100%;
+  height: 150px; /* Высота изображения в карточке */
+  object-fit: cover;
+}
