@@ -4,35 +4,31 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.app {
-  height: 100vh;
-}
-
 .header {
-  background-color: #800080;
+  background-color: #512689;
   color: #fff;
   text-align: center;
   padding: 20px;
 }
 
 .header-title {
-  font-size: 2em;
+  font-size: 64px;
 }
 
 .header-text {
-  font-size: 1.2em;
+  font-size: 20px;
   margin-top: 10px;
 }
 
 .header-button {
-  background-color: #800080;
+  position: absolute;
+  background-color: #512689;
   color: #fff;
   padding: 10px 20px;
-  border: none;
+  border: 1px solid #fff;
   border-radius: 5px;
   border-color: #fff;
   cursor: pointer;
-  position: absolute;
   top: 10px;
   right: 10px;
 }

@@ -1,10 +1,17 @@
 import React from "react";
 import "./Card.scss";
 
-const Card = () => {
+const Card = (props) => {
+  console.log(props);
+
   return (
-    <div className="card">
-      <img src="https://reqres.in/" alt="" className="card-image" />
+    <div className="container">
+      <div className="card">
+        <img className="user-img" src={props.item.avatar} alt="ben" />
+        <p className="user-name">
+          {props.item.first_name} {props.item.last_name}
+        </p>
+      </div>
     </div>
   );
 };
