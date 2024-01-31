@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Card from "./components/card/Card";
-import { Header } from "./components/header/Header";
+import { Header } from "./components/home/header/Header";
+import { Card } from "./components/home/card/Card";
+import { EmployeeProfile } from "./components/profile/Profile";
 
 function App() {
   const [users, setUsers] = useState();
@@ -16,15 +17,16 @@ function App() {
 
   return (
     <div>
-      <Header />
-      <div className="employees">
+      <EmployeeProfile />
+      {/* <Header /> */}
+      {/* <div className="employees">
         {users ? (
           users.map((user) => <Card key={user.id} item={user} />)
         ) : (
           <p>Loading...</p>
         )}
-      </div>
-      <button className="list-btn">Показать еще</button>
+      </div> */}
+      {/* <button className="list-btn">Показать еще</button> */}
     </div>
   );
 }
