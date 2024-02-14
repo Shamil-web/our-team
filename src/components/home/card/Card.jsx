@@ -2,8 +2,6 @@ import React from "react";
 import "./Card.scss";
 
 export const Card = (props) => {
-  console.log(props);
-
   return (
     <div className="container">
       <div className="card">
