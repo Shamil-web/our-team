@@ -13,7 +13,11 @@ export const Main = () => {
       <div className="employees">
         {users ? (
           users.map((user) => (
-            <Link key={user.id} to={`/profile/${user.id}`}>
+            <Link
+              key={user.id}
+              to={`/profile/${user.id}`}
+              style={{ textDecoration: "none" }}
+            >
               <Card item={user} />
             </Link>
           ))
