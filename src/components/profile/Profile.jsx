@@ -1,11 +1,14 @@
 import React from "react";
 import "./Profile.scss";
+import { Link } from "react-router-dom";
 
 export const EmployeeProfile = () => {
   return (
     <div>
       <header className="header">
-        <button className="btn-back">Назад</button>
+        <Link to="/" className="btn-back">
+          Назад
+        </Link>
         <button className="btn-exit">Выход</button>
         <div>
           <div>
