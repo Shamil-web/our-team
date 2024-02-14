@@ -6,8 +6,8 @@ export const EmployeeProfile = () => {
   return (
     <div>
       <header className="header">
-        <Link to="/" className="btn-back">
-          Назад
+        <Link to="/">
+          <button className="btn-back">Назад</button>
         </Link>
         <button className="btn-exit">Выход</button>
         <div>

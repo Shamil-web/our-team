@@ -1,3 +1,5 @@
+@import "/src/font.scss";
+
 .header {
   background-color: #512689;
   color: #fff;
@@ -31,6 +33,10 @@
   right: 50px;
 }
 
+button:hover {
+  background-color: #600060;
+}
+
 img {
   width: 200px;
   height: 200px;
@@ -41,10 +47,9 @@ img {
   width: 630px;
   height: 396px;
   left: 188px;
-  // top: 314px;
-  z-index: 2;
-
+  font-family: $primary-font;
   color: #151317;
+  line-height: 1.4;
 }
 
 .info {
