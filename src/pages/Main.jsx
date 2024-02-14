@@ -1,6 +1,6 @@
 import React from "react";
-import { Header } from "../components/home/header/Header";
-import { Card } from "../components/home/card/Card";
+import { Header } from "../components/header/Header";
+import { Card } from "../components/card/Card";
 import { useGetUsers } from "../hooks/useGetUsers";
 import { Link } from "react-router-dom";
 
