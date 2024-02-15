@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Profile.scss";
 import { Link } from "react-router-dom";
+import { ThemeContext } from "../../App";
 
 export const EmployeeProfile = () => {
+  const { name, age } = useContext(ThemeContext);
+  console.log(name, age);
+
   return (
     <div>
       <header className="header">

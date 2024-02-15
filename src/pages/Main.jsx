@@ -8,7 +8,7 @@ export const Main = () => {
   const { users } = useGetUsers();
 
   return (
-    <div>
+    <>
       <Header />
       <div className="employees">
         {users ? (
@@ -26,6 +26,6 @@ export const Main = () => {
         )}
       </div>{" "}
       <button>Показать еще</button>
-    </div>
+    </>
   );
 };
