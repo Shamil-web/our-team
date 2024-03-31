@@ -1,36 +1,29 @@
 import React from "react";
-import "./Card.scss";
+import "./card.scss";
 import { Link } from "react-router-dom";
+import { User } from "../../hooks/use-get-users";
 
-interface User {
-  id: number;
-  avatar: string;
-  first_name: string;
-  last_name: string;
-  // Другие поля пользователя, если есть
-}
-
-interface CardProps {
+type Props = {
   item: User;
-}
+};
 
-const Card: React.FC<CardProps> = (props) => {
+const Card = (props: Props) => {
   return (
-    <div className="container">
-      <div className="card">
-        <Link
-          state={props.item}
-          to={{
-            pathname: `/profile/${props.item.id}`,
-          }}
-        >
+    <Link
+      state={props.item}
+      to={{
+        pathname: `/profile/${props.item.id}`,
+      }}
+    >
+      <div className="container">
+        <div className="card">
           <img className="user-img" src={props.item.avatar} alt="ben" />
-        </Link>
-        <p className="user-name">
-          {props.item.first_name} {props.item.last_name}
-        </p>
+          <p className="user-name">
+            {props.item.first_name} {props.item.last_name}
+          </p>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

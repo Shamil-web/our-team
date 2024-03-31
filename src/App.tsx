@@ -1,7 +1,7 @@
 import React, { createContext, useState } from "react";
-import { EmployeeProfile } from "./components/profile/Profile.tsx";
+import { EmployeeProfile } from "./components/profile/profile.tsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Main } from "./pages/Main.tsx";
+import { Main } from "./pages/main.tsx";
 
 // export const ThemeContext = createContext(null);
 

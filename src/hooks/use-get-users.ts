@@ -1,7 +1,15 @@
 import { useEffect, useState } from "react";
 
+export type User = {
+  id: number;
+  name: string;
+  avatar: string;
+  first_name: string;
+  last_name: string;
+};
+
 export const useGetUsers = () => {
-  const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState<User[]>([]);
   const getUsers = () => {
     fetch("https://reqres.in/api/users?page1")
       .then((response) => response.json())
