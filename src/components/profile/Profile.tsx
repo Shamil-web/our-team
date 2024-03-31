@@ -1,12 +1,12 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./Profile.scss";
-import { Link } from "react-router-dom";
-import { ThemeContext } from "../../App";
+import { Link, useLocation } from "react-router-dom";
+// import { ThemeContext } from "../../App";
 
 export const EmployeeProfile = () => {
-  const { name, age } = useContext(ThemeContext);
-  console.log(name, age);
-
+  const { state: user } = useLocation();
+  console.log(user);
+  // const { name, age } = useContext(ThemeContext);
   return (
     <div>
       <header className="header">
@@ -16,14 +16,11 @@ export const EmployeeProfile = () => {
         <button className="btn-exit">Выход</button>
         <div>
           <div>
-            <img
-              src="https://shapka-youtube.ru/wp-content/uploads/2021/02/prikolnaya-avatarka-dlya-patsanov.jpg"
-              alt="monkey"
-            />
+            <img src={user.avatar} alt="monkey" />
           </div>
           <div>
-            <h2>Артур Королев</h2>
-            <p>партнер</p>
+            <h2>{user.first_name}</h2>
+            <h2>{user.last_name}</h2>
           </div>
         </div>
       </header>
@@ -39,13 +36,13 @@ export const EmployeeProfile = () => {
             инструменты. В работе с клиентами недостаточно
           </p>
           <p>
-            {" "}
-            просто решить конкретную проблему или помочь справиться с
-            трудностями. Не менее важно уделять внимание обмену знаниями: "Один
-            из самых позитивных моментов — это осознание того, что ты помог
-            клиенту перейти на совершенно новый уровень компетентности,
-            уверенность в том, что после окончания проекта у клиента есть все
-            необходимое, чтобы дальше развиваться самостоятельно".
+            В работе с клиентами недостаточно просто решить конкретную проблему
+            или помочь справиться с трудностями. Не менее важно уделять внимание
+            обмену знаниями: "Один из самых позитивных моментов — это осознание
+            того, что ты помог клиенту перейти на совершенно новый уровень
+            компетентности, уверенность в том, что после окончания проекта у
+            клиента есть все необходимое, чтобы дальше развиваться
+            самостоятельно".
           </p>
           <p>
             Помимо разнообразных проектов для клиентов финансового сектора,
