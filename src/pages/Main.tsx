@@ -1,7 +1,7 @@
 import React from "react";
 import { Header } from "../components/header/header.tsx";
 import Card from "../components/card/card.tsx";
-import { useGetUsers } from "../hooks/use-get-users.ts";
+import useGetUsers from "../hooks/use-get-users.ts";
 import { Link } from "react-router-dom";
 
 export const Main = () => {

@@ -8,7 +8,7 @@ export type User = {
   last_name: string;
 };
 
-export const useGetUsers = () => {
+const useGetUsers = () => {
   const [users, setUsers] = useState<User[]>([]);
   const getUsers = () => {
     fetch("https://reqres.in/api/users?page1")
@@ -22,3 +22,5 @@ export const useGetUsers = () => {
 
   return { users };
 };
+
+export default useGetUsers;

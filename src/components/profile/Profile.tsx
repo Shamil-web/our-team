@@ -1,11 +1,9 @@
 import React from "react";
 import "./profile.scss";
 import { Link, useLocation } from "react-router-dom";
-// import { ThemeContext } from "../../App";
 
 export const EmployeeProfile = () => {
   const { state: user } = useLocation();
-  // const { name, age } = useContext(ThemeContext);
   return (
     <div>
       <header className="header">
